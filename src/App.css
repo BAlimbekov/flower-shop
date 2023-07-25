@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+/* styles.css */
+
+/* Reset default margin and padding for the whole page */
+body, ul {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the video container to cover the full viewport */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Set the z-index to a negative value to place it behind the content */
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the video background to cover the full width and maintain aspect ratio */
+.video-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Reset default margin and padding for the whole page */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Style the page container to cover the whole viewport height */
+.page-container {
   display: flex;
+  position: relative;
   flex-direction: column;
+
+}
+
+/* Style the main content container to take the remaining space */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style the header and navbar with transparent background */
+header {
+  display: flex;
+  background-color: rgba(140, 154, 115, 0.5); /* Use rgba to set transparency */
+  padding: 10px 20px;
+  z-index: 1; /* Set a positive z-index to place the header above the video */
+}
+
+/* Style the logo with warm text color and a touch of shadow */
+.logoName-container {
+  width: 50px; /* Set the width of the logo */
+  height: 50px; /* Set the height of the logo */
+  border-radius: 50%; /* Make the logo photo round */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  font-size: 24px;
+  font-weight: bold;
+  color: #806862;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+/* Style the navigation links with warm text color and a subtle hover effect */
+.nav-links li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  color: #2d2625;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #625b58;
+  border-radius: 5px;
+}
+
+/* Style the logo container */
+.logo-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the footer with transparent background */
+.footer {
+  background-color: rgba(51, 51, 51, 0.5); /* Use rgba to set transparency */
+  color: #fff;
+  padding: 20px;
+  position: fixed; /* Set the footer to a fixed position */
+  bottom: 0; /* Place the footer at the bottom of the viewport */
+  width: 100%; /* Make the footer span the full width of the viewport */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Center the content inside the footer */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the footer content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 45%; /* Adjust the flex value based on your desired width */
+  margin-bottom: 20px;
+}
+
+/* Style the footer headings */
+.footer h3 {
+  color: #F9C7B7;
+  font-size: 20px;
+}
+
+/* Style the footer paragraphs */
+.footer p {
+  font-size: 14px;
+}
+
+/* Style the copyright notice */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
 }

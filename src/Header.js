@@ -1,22 +1,19 @@
 import React from 'react';
-import logo from './photo/download.png'; // Replace with your actual logo image
+import logo from './Photos&Videos/download.png'; // Replace with your actual logo image
 
 const Header = () => {
+  const whatsappNumber = '+79214286021'; // Replace with the desired WhatsApp phone number
+
   return (
     <header className="header">
       <div className="container">
         <nav className="navbar">
-          <a href="/" className="logo">
-            <div className='logoDiv'>
-              <img src={logo} alt="Flower Shop Logo" />
-            </div>  
-            <div className='headerName'>Green House</div>   
-          </a>
           <ul className="nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="/shop">Shop</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            {/* Directly open WhatsApp chat with the specified phone number */}
+            <li><a href={`https://wa.me/${whatsappNumber}`} target="_blank">Chat</a></li>
           </ul>
         </nav>
       </div>
