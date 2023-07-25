@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/flower-shop-app/static/css/main.72c56cd1.css",
+    "main.js": "/flower-shop-app/static/js/main.0997bcc5.js",
+    "static/js/787.f4f517c0.chunk.js": "/flower-shop-app/static/js/787.f4f517c0.chunk.js",
+    "static/media/download.png": "/flower-shop-app/static/media/download.6f13298cfccf4e8e8640.png",
+    "index.html": "/flower-shop-app/index.html",
+    "main.72c56cd1.css.map": "/flower-shop-app/static/css/main.72c56cd1.css.map",
+    "main.0997bcc5.js.map": "/flower-shop-app/static/js/main.0997bcc5.js.map",
+    "787.f4f517c0.chunk.js.map": "/flower-shop-app/static/js/787.f4f517c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72c56cd1.css",
+    "static/js/main.0997bcc5.js"
+  ]
+}
