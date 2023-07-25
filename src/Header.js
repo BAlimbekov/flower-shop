@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './Photos&Videos/download.png'; // Replace with your actual logo image
+
 
 const Header = () => {
   const whatsappNumber = '+79214286021'; // Replace with the desired WhatsApp phone number
